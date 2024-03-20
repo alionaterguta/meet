@@ -12,7 +12,7 @@ const Event = ({event}) => {
        <p>{event.location}</p>
        {toggle ? 
        <>
-       <p>{event.description}</p>
+       <p className='eventDetails'>{event.description}</p>
        <button id="hide-details" onClick={() => setToggle(false)}> Hide details </button>
        </>
        :
