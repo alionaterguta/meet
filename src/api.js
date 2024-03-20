@@ -45,8 +45,8 @@ export const getEvents = async () => {
   const token = await getAccessToken();
   if(token) {
     removeQuery();
-    const url = "https://2j9koowjcc.execute-api.eu-central-1.amazonaws.com/dev/api/get-events/" + "/" + token;
-    const response =await fetch(url);
+    const url = "https://2j9koowjcc.execute-api.eu-central-1.amazonaws.com/dev/api/get-events" + "/" + token;
+    const response = await fetch(url);
     const result = await response.json();
     if(result) {
       return result.events;
@@ -77,9 +77,7 @@ export const getEvents = async () => {
 
  const getToken = async (code) => {
   const encodeCode = encodeURIComponent(code);
-  const response = await fetch(
-    "https://2j9koowjcc.execute-api.eu-central-1.amazonaws.com/dev/api/token/" + "/" + encodeCode
-  );
+  const response = await fetch("https://2j9koowjcc.execute-api.eu-central-1.amazonaws.com/dev/api/token" + "/" + encodeCode);
   const { access_token } = await response.json();
   access_token && localStorage.setItem("access_token", access_token);
 
