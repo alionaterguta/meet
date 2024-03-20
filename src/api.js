@@ -22,21 +22,6 @@ const checkToken = async (accessToken) => {
   return result;
 };
 
-const removeQuery = () => {
-  let newurl;
-  if (window.history.pushState && window.location.pathname) {
-    newurl =
-      window.location.protocol +
-      "//" +
-      window.location.host +
-      window.location.pathname;
-    window.history.pushState("", "", newurl);
-  } else {
-    newurl = window.location.protocol + "//" + window.location.host;
-    window.history.pushState("", "", newurl);
-  }
-};
-
 // This function will fetch the list of all events
 export const getEvents = async () => {
   if (window.location.href.startsWith('http://localhost')) {
@@ -74,6 +59,21 @@ export const getEvents = async () => {
   }
   return accessToken;
  }
+ 
+const removeQuery = () => {
+  let newurl;
+  if (window.history.pushState && window.location.pathname) {
+    newurl =
+      window.location.protocol +
+      "//" +
+      window.location.host +
+      window.location.pathname;
+    window.history.pushState("", "", newurl);
+  } else {
+    newurl = window.location.protocol + "//" + window.location.host;
+    window.history.pushState("", "", newurl);
+  }
+};
 
  const getToken = async (code) => {
   const encodeCode = encodeURIComponent(code);
