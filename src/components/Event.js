@@ -5,21 +5,31 @@ const Event = ({ event }) => {
 
   return (
     <>
-      <li>
+      <li className="event">
         <div>
           <h2>{event.summary}</h2>
-          <p>{event.created}</p>
-          <p>{event.location}</p>
+          <p className="eventLocation">{event.location}</p>
+          <div>
+            <p className="eventDate">{new Date(event.created).toUTCString()}</p>
+          </div>
           {toggle ? (
             <>
               <p className="eventDetails">{event.description}</p>
-              <button id="hide-details" onClick={() => setToggle(false)}>
+              <button
+                className="details-btn"
+                id="hide-details"
+                onClick={() => setToggle(false)}
+              >
                 {" "}
                 Hide details{" "}
               </button>
             </>
           ) : (
-            <button id="show-details" onClick={() => setToggle(true)}>
+            <button
+              className="details-btn"
+              id="show-details"
+              onClick={() => setToggle(true)}
+            >
               {" "}
               Show details{" "}
             </button>
