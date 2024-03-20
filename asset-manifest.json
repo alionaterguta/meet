@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/alionaterguta/meet/static/css/main.f855e6bc.css",
-    "main.js": "/alionaterguta/meet/static/js/main.9e1c3a1f.js",
+    "main.js": "/alionaterguta/meet/static/js/main.18c3aa89.js",
     "static/js/453.4a9980c6.chunk.js": "/alionaterguta/meet/static/js/453.4a9980c6.chunk.js",
     "service-worker.js": "/alionaterguta/meet/service-worker.js",
     "index.html": "/alionaterguta/meet/index.html",
     "main.f855e6bc.css.map": "/alionaterguta/meet/static/css/main.f855e6bc.css.map",
-    "main.9e1c3a1f.js.map": "/alionaterguta/meet/static/js/main.9e1c3a1f.js.map",
+    "main.18c3aa89.js.map": "/alionaterguta/meet/static/js/main.18c3aa89.js.map",
     "453.4a9980c6.chunk.js.map": "/alionaterguta/meet/static/js/453.4a9980c6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.9e1c3a1f.js"
+    "static/js/main.18c3aa89.js"
   ]
 }
