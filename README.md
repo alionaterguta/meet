@@ -8,33 +8,33 @@ Powered by Test-Driven Development, it prioritizes code quality and test coverag
 ### User Stories
 
 1. As a user,
-I should be able to filter events by city
-So that I can see a list of events taking place in that city.
+   I should be able to filter events by city
+   So that I can see a list of events taking place in that city.
 
 2. As a user,
-I should be able to show and hide events details
-can have control over the amount of information displayed.
+   I should be able to show and hide events details
+   can have control over the amount of information displayed.
 
 3. As a user,
-I should be able to see a specific number of events,
-so can I can quickly find and browse through a list of events without being
- overwhelmed by too much information.
+   I should be able to see a specific number of events,
+   so can I can quickly find and browse through a list of events without being
+   overwhelmed by too much information.
 
 4. As a user,
-I should be able to use the App when offline,
-so that I have the Events list and info related to them at all times. 
+   I should be able to use the App when offline,
+   so that I have the Events list and info related to them at all times.
 
 5. As a user,
-I should be able to add a shortcut to the home screen,
-so that I have easy access to the app.
+   I should be able to add a shortcut to the home screen,
+   so that I have easy access to the app.
 
 6. As a user,
-I should be able to see charts visualizing event details,
-so that I would better understand the data associated with events and make a choise.
+   I should be able to see charts visualizing event details,
+   so that I would better understand the data associated with events and make a choise.
 
-### Scenarios 
+### Scenarios
 
-* *SCENARIO 1*
+- _SCENARIO 1_
 
 When user hasn’t searched for a specific city, show upcoming events from all cities.
 
@@ -44,7 +44,7 @@ When user hasn’t searched for a specific city, show upcoming events from all c
 
 **Then** the user should see a list of upcoming events.
 
-* *SCENARIO 2*
+- _SCENARIO 2_
 
 User should see a list of suggestions when they search for a city.
 
@@ -54,7 +54,7 @@ User should see a list of suggestions when they search for a city.
 
 **Then** the user should receive a list of cities (suggestions) that match what they’ve typed.
 
-* *SCENARIO 3*
+- _SCENARIO 3_
 
 User can select a city from the suggested list.
 
@@ -64,9 +64,9 @@ User can select a city from the suggested list.
 
 **Then** their city should be changed to that city (i.e., “Berlin, Germany”) AND the user should receive a list of upcoming events in that city.
 
-* *SCENARIO 4*
+- _SCENARIO 4_
 
-User has clicked to expand show more details of the event 
+User has clicked to expand show more details of the event
 
 **Given** user has decided to click on an event to see more details;
 
@@ -74,17 +74,17 @@ User has clicked to expand show more details of the event
 
 **Then** the user should see more details of the event.
 
-* *SCENARIO 5*
+- _SCENARIO 5_
 
 User has displayed on the page a specific number of events;
 
 **Given** user selected a city for ex. "Berlin" from the list.
 
-**When** user clickes on the city;
+**When** user clicks on the city;
 
-**Then** the user should see a specific number of events, 20 at a time.
+**Then** the user should see a specific number of events, 32 at a time.
 
-* *SCENARIO 6*
+- _SCENARIO 6_
 
 User has the app installed or shortcut on home screen but no internet connection.
 
@@ -94,7 +94,7 @@ User has the app installed or shortcut on home screen but no internet connection
 
 **Then** user should be able to use the app offline and see the events of a chosen city (e.g., “Berlin, Germany”).
 
-* *SCENARIO 7*
+- _SCENARIO 7_
 
 User has the app oppen and decides to create a shortcut for home creen.
 
@@ -104,11 +104,11 @@ User has the app oppen and decides to create a shortcut for home creen.
 
 **Then**user should be able to find the shortcut on the home screen.
 
-* *SCENARIO 8*
+- _SCENARIO 8_
 
 User is planing a weekend and browses through a list of upcoming events from (e.g., “Berlin, Germany”).
 
-**Given** user chooses an event of interest but unsure about the details and attendance trends. 
+**Given** user chooses an event of interest but unsure about the details and attendance trends.
 Navigates to the event page and notice a chart visualization option available;
 
 **When** user taps on chart visualisation icon;
@@ -117,5 +117,4 @@ Navigates to the event page and notice a chart visualization option available;
 
 ### The use of Serverless Functions
 
-
-  Serverless functions are utilized in the Meet app to handle backend operations without the need for maintaining server infrastructure. For example, when users request information about upcoming events or perform actions like filtering events by city, serverless functions respond to these requests by retrieving and processing data from the database. By leveraging serverless architecture, the app ensures scalability, cost-effectiveness, and efficient resource utilization, allowing seamless access to event information regardless of the user's location or network connectivity.
+Serverless functions are utilized in the Meet app to handle backend operations without the need for maintaining server infrastructure. For example, when users request information about upcoming events or perform actions like filtering events by city, serverless functions respond to these requests by retrieving and processing data from the database. By leveraging serverless architecture, the app ensures scalability, cost-effectiveness, and efficient resource utilization, allowing seamless access to event information regardless of the user's location or network connectivity.

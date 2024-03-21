@@ -9,7 +9,7 @@ describe("<App /> component", () => {
     AppDOM = render(<App />).container.firstChild;
   });
 
-  test("renders list of events", () => {
+  test("renders list of upcoming events", () => {
     expect(AppDOM.querySelector("#event-list")).toBeInTheDocument();
   });
 
