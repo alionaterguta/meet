@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Logo from "../img/logo.svg";
 
 const CitySearch = ({ allLocations, setCurrentCity }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -32,6 +33,7 @@ const CitySearch = ({ allLocations, setCurrentCity }) => {
 
   return (
     <div id="city-search">
+      <img src={Logo} alt="Logo" width="140" />
       <input
         type="text"
         className="city"

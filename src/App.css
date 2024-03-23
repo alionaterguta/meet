@@ -2,7 +2,7 @@
 .App {
   text-align: center;
   padding: 2% 5%;
-  background-color: #00a99d;
+  background-color: rgb(193, 211, 198, 0.1);
 }
 
 .App * {
@@ -16,7 +16,7 @@ ul {
 h4 {
   display: inline-block;
   margin: 8px;
-  color: white;
+  color: black;
 }
 #number-of-events {
   padding: 8px 8px;
