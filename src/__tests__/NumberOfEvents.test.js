@@ -6,7 +6,9 @@ import App from "../App";
 describe("<NumberOfEvents /> component", () => {
   let numberOfEvents;
   beforeEach(() => {
-    numberOfEvents = render(<NumberOfEvents setCurrentNOE={() => {}} />);
+    numberOfEvents = render(
+      <NumberOfEvents setCurrentNOE={() => {}} setErrorAlert={() => {}} />
+    );
   });
 
   test("component contains an element with role of textbox", () => {

@@ -71,12 +71,13 @@ input[type="text"] {
 .suggestions {
   width: 250px;
   position: absolute;
-  top: 45px;
+  top: 134px;
   z-index: 2;
   align-self: center;
   margin: 0;
   font-size: 14px;
   box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
 }
 
 .suggestions > li {
@@ -116,4 +117,11 @@ input[type="text"] {
   border: none;
   background-color: #00a99d;
   color: #f9fefe;
+}
+.alerts-container {
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  width: 250px;
+  z-index: 1000;
 }
