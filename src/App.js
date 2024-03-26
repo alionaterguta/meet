@@ -33,7 +33,7 @@ const App = () => {
     <div className="App">
       <div className="alerts-container">
         {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
-        {errorAlert.length ? <ErrorAlert text={0} /> : null}
+        {errorAlert.length ? <ErrorAlert text={errorAlert} /> : null}
       </div>
       <CitySearch
         allLocations={allLocations}
