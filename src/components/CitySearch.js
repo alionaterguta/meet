@@ -3,14 +3,12 @@ import Logo from "../img/logo.svg";
 
 const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
-  //Add a new state for the input field so that the value can be accessed
   const [query, setQuery] = useState("");
-  // Add a new state which will hold the list of suggestions
   const [suggestions, setSuggestions] = useState([]);
 
   useEffect(() => {
     setSuggestions(allLocations);
-  }, [`${allLocations}`]); // `${allLocations}` -strigified value of the prop
+  }, [`${allLocations}`]);
 
   const handleInputChanged = (event) => {
     const value = event.target.value;
@@ -36,7 +34,7 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
   const handleItemClicked = (event) => {
     const value = event.target.textContent;
     setQuery(value);
-    setShowSuggestions(false); //to hide the list
+    setShowSuggestions(false);
     setCurrentCity(value);
     setInfoAlert("");
   };
@@ -44,6 +42,9 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert }) => {
   return (
     <div id="city-search">
       <img src={Logo} alt="Logo" width="140" />
+      <h4 className="slogan">
+        Join the Coding World – Unlock Events Everywhere!
+      </h4>
       <input
         type="text"
         className="city"

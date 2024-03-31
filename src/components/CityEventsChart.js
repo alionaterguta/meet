@@ -10,6 +10,7 @@ import {
 } from "recharts";
 
 const CityEventsChart = ({ allLocations, events }) => {
+  console.log("AllLocations", allLocations);
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -42,6 +43,7 @@ const CityEventsChart = ({ allLocations, events }) => {
           type="category"
           dataKey="city"
           name="City"
+          allowDecimals={false}
           angle={60}
           interval={0}
           tick={{ dx: 20, dy: 40, fontSize: 14 }}

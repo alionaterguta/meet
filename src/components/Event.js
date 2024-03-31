@@ -6,7 +6,7 @@ const Event = ({ event }) => {
   return (
     <>
       <li className="event">
-        <div>
+        <div className="details-container">
           <h2>{event.summary}</h2>
           <p className="eventLocation">{event.location}</p>
           <div>
@@ -15,6 +15,7 @@ const Event = ({ event }) => {
           {toggle ? (
             <>
               <p className="eventDetails">{event.description}</p>
+              <br />
               <button
                 className="details-btn"
                 id="hide-details"
@@ -25,14 +26,17 @@ const Event = ({ event }) => {
               </button>
             </>
           ) : (
-            <button
-              className="details-btn"
-              id="show-details"
-              onClick={() => setToggle(true)}
-            >
-              {" "}
-              Show details{" "}
-            </button>
+            <>
+              <br />
+              <button
+                className="details-btn"
+                id="show-details"
+                onClick={() => setToggle(true)}
+              >
+                {" "}
+                Show details{" "}
+              </button>
+            </>
           )}
         </div>
       </li>
