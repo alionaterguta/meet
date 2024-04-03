@@ -123,7 +123,9 @@ Serverless functions are utilized in the Meet app to handle backend operations w
 
 - Clone this repository
 
-      cd project folder
+- Go to the project directory
+
+      cd project-folder
 
 - Install dependencies
 
