@@ -10,7 +10,6 @@ import {
 } from "recharts";
 
 const CityEventsChart = ({ allLocations, events }) => {
-  console.log("AllLocations", allLocations);
   const [data, setData] = useState([]);
 
   useEffect(() => {
